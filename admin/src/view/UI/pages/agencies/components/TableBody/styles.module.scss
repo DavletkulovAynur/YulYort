@@ -1,0 +1,16 @@
+.phones {
+  display: flex;
+  flex-direction: column;
+}
+
+.phones_cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row__loading {
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -1,0 +1,26 @@
+$notconnecttextheight: calc(var(--yy-base) * 6);
+
+.errorBoundary {
+  overflow: hidden;
+
+  .notConnectText {
+    position: relative;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $notconnecttextheight;
+    text-align: center;
+    color: var(--yy-white-color);
+    background-color: var(--yy-error-color);
+    z-index: 1101; // костыль, чтобы плашка оказывалась над шапкой.
+  }
+
+  &__offline {
+    padding-top: $notconnecttextheight;
+
+    .notConnectText {
+      display: block;
+    }
+  }
+}

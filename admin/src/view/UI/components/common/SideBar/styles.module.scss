@@ -1,0 +1,37 @@
+.title {
+  margin-right: calc(var(--yy-base) * 2);
+}
+
+.listItem {
+  padding: 0;
+}
+
+.menuWrapper {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  padding: calc(var(--yy-base) * 2);
+  align-items: center;
+  color: var(--yy-text-primary);
+  text-decoration: none;
+}
+
+.logoutButtonWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 100%;
+  bottom: calc(var(--yy-base) * 4);
+}
+
+.logoutButton {
+  align-self: center;
+}

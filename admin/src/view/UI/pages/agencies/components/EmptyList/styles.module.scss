@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--yy-base) * 2);
+}
+
+.title {
+  text-align: center;
+}
+
+.button {
+  margin-top: calc(var(--yy-base) * 3);
+  width: fit-content;
+}

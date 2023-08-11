@@ -1,0 +1,7 @@
+.body {
+  position: absolute;
+  height: calc(100% - var(--yy-header-height));
+  width: 100%;
+  padding: 16px;
+  overflow: auto;
+}
