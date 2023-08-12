@@ -1,0 +1,10 @@
+# Сначала используем образ Nginx
+FROM nginx:latest
+
+WORKDIR /usr/share/nginx/html
+
+# Копируем статические файлы клиентской части
+COPY --from=client_build /app/build /usr/share/nginx/html
+
+# Копируем файл конфигурации Nginx
+COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
